@@ -1,0 +1,114 @@
+<HEAD>
+<title> Ben's website </title>
+<script type="text/javascript" src="/path/to/swfobject.js"></script>
+<script type="text/javascript">
+function loadSWF(url){
+  swfobject.embedSWF(url, "flashcontent", "550", "400", "7");
+}
+</script>
+</HEAD>
+<!DOCTYPE=HTML!>
+<html>
+<head>
+<p> BENS WEBSITE </p>
+<script src="konami.js"></script>
+</head>
+<h1> Ben's Website </h1>
+<p> BEN IS AMAZING </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ijvWzx4DZ2Y" frameborder="0" allowfullscreen></iframe>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Oh look a password box!',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "benisawesome") {
+alert('Opening website... WARNING: THIS WEBSITE PROBABLY CONTAINS NO VIRUSES BUT IF IT DOES TOO BAD LOL I DONT CARE IF IT BLOWS UP YOUR PC THATS YOUR PROBLEM - Enjoy! From Ben.');
+window.open('protected_area135.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+alert('WRONG PASSWORD GET REKT','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<SCRIPT>
+function passWord2() {
+var testVA = 1;
+var pass2 = prompt('Bet u cant guess the password!',' ');
+while (testVA < 3) {
+if (!pass2) 
+history.go(-1);
+if (pass2.toLowerCase() == "password") {
+alert('So hard');
+window.open('website.html');
+break;
+} 
+testVA+=1;
+var pass2 = 
+alert('WRONG PASSWORD GET REKT','Password');
+}
+if (pass2.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<SCRIPT>
+function hello() {
+	alert('Hello everyone')
+}
+</SCRIPT>
+<script>
+var easter_egg = new Konami(function() { 
+window.open("rickroll.swf","_self")
+});
+</script>
+<script>
+function show_image(src, width, height, alt) {
+    var img = document.createElement("img");
+    img.src = src;
+    img.width = width;
+    img.height = height;
+    img.alt = alt;
+
+    document.body.appendChild(img);
+}
+</script>
+<script language="javascript" type="text/javascript">
+ function playSound(soundfile) {
+ document.getElementById("dummy").innerHTML=
+ "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+ }
+</script>
+<CENTER>
+<FORM>
+<input type="button" value="CLICK ME!!! :) :) :) " onClick="passWord()">
+</FORM>
+<FORM>
+<input type="button" value="CLICK ME TOO!!! :) :) :) " onClick="passWord2()">
+</FORM>
+<FORM>
+<input type="button" value="Make me say hello!" onClick="hello()">
+</FORM>
+</CENTER>
+<object data="rickroll.swf" type="application/x-shockwave-flash" width="400" height="400" style="display:none;" id="SWF">
+    <param name="movie" value="rickroll.swf">
+
+    <!-- If flash is not installed -->
+    <p>You need Adobe Flash Player to view this content</p>
+</object>
+
+<script>
+$('#showSWFButton').click(function(){
+    setTimeout(showSWF,1) //10 000 milliseconds = 10 seconds
+})
+
+function showSWF(){
+    $('#SWF').show();
+}
+</script>
